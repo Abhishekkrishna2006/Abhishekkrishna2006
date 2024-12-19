@@ -23,7 +23,6 @@ def calculator():
         print("5. Modulus")
         print("6. Power")
         print("7. Exit")
-
         choice = input("Enter choice (1/2/3/4/5/6/7): ")
         if choice == '7':
             print("Exiting the calculator. Goodbye!")
