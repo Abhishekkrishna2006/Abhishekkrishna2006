@@ -25,11 +25,9 @@ def calculator():
         print("7. Exit")
 
         choice = input("Enter choice (1/2/3/4/5/6/7): ")
-
         if choice == '7':
             print("Exiting the calculator. Goodbye!")
             break
-
         if choice in ('1', '2', '3', '4', '5', '6'):
             try:
                 num1 = float(input("Enter first number: "))
@@ -37,18 +35,17 @@ def calculator():
             except ValueError:
                 print("Invalid input! Please enter numeric values.")
                 continue
-
-            if choice == '1':
+        if choice == '1':
                 print(f"The result is: {add(num1, num2)}")
-            elif choice == '2':
+        elif choice == '2':
                 print(f"The result is: {subtract(num1, num2)}")
-            elif choice == '3':
+        elif choice == '3':
                 print(f"The result is: {multiply(num1, num2)}")
-            elif choice == '4':
+        elif choice == '4':
                 print(f"The result is: {divide(num1, num2)}")
-            elif choice == '5':
+        elif choice == '5':
                 print(f"The result is: {modulus(num1, num2)}")
-            elif choice == '6':
+        elif choice == '6':
                 print(f"The result is: {power(num1, num2)}")
         else:
             print("Invalid choice! Please select a valid option.")
